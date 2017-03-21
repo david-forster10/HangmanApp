@@ -9,13 +9,11 @@ package hangmanapp;
  *
  * @author Vanilla
  */
-public class HangmanApp {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class HangmanApp 
+{
+    public static void main(String[] args) 
+    {
+        StartJFrame form = new StartJFrame();
+        form.setVisible(true);
     }
-    
 }

@@ -5,6 +5,9 @@
  */
 package hangmanapp;
 
+import java.awt.Color;
+import javax.swing.JButton;
+
 /**
  *
  * @author Vanilla
@@ -32,35 +35,53 @@ public class StartJFrame extends javax.swing.JFrame {
         lblDescription = new javax.swing.JLabel();
         btnPlay = new javax.swing.JButton();
         btnAdd = new javax.swing.JButton();
+        btnExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblWelcome.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        lblWelcome.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lblWelcome.setText("Welcome to Hangman");
 
-        lblDescription.setText("jLabel1");
+        lblDescription.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblDescription.setText("Teaching kids about torture since 1894");
 
         btnPlay.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         btnPlay.setText("PLAY");
+        btnPlay.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnPlayMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnPlayMouseExited(evt);
+            }
+        });
 
-        btnAdd.setText("jButton1");
+        btnAdd.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        btnAdd.setText("ADD");
+
+        btnExit.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        btnExit.setText("EXIT");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(90, 90, 90)
-                        .addComponent(lblWelcome))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(148, 148, 148)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnPlay)
-                            .addComponent(lblDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnAdd))))
-                .addContainerGap(110, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(148, 148, 148)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(btnExit, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnAdd, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnPlay, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(65, 65, 65)
+                            .addComponent(lblWelcome))))
+                .addContainerGap(71, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -71,9 +92,11 @@ public class StartJFrame extends javax.swing.JFrame {
                 .addComponent(lblDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addComponent(btnPlay)
-                .addGap(27, 27, 27)
-                .addComponent(btnAdd)
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -89,6 +112,14 @@ public class StartJFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnPlayMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPlayMouseEntered
+        btnPlay.setBackground(Color.cyan);
+    }//GEN-LAST:event_btnPlayMouseEntered
+
+    private void btnPlayMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPlayMouseExited
+        btnPlay.setBackground(new JButton().getBackground());
+    }//GEN-LAST:event_btnPlayMouseExited
 
     /**
      * @param args the command line arguments
@@ -127,6 +158,7 @@ public class StartJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdd;
+    private javax.swing.JButton btnExit;
     private javax.swing.JButton btnPlay;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblDescription;
