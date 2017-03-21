@@ -78,6 +78,11 @@ public class StartJFrame extends javax.swing.JFrame {
                 btnAddMouseEntered(evt);
             }
         });
+        btnAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddActionPerformed(evt);
+            }
+        });
 
         btnExit.setBackground(new java.awt.Color(0, 0, 0));
         btnExit.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
@@ -179,6 +184,11 @@ public class StartJFrame extends javax.swing.JFrame {
         btnExit.setBackground(Color.GREEN);
          this.dispose();
     }//GEN-LAST:event_btnExitMouseClicked
+
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        new Add().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnAddActionPerformed
 
     /**
      * @param args the command line arguments
