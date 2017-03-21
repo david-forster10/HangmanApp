@@ -93,7 +93,7 @@ public class Add extends javax.swing.JFrame {
     private void btnaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaddActionPerformed
         // TODO add your handling code here:
      
-    /*   try
+    try
      {
          Class.forName("com.mysql.jdbc.Driver");
          Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/hangman","user","user");
@@ -115,7 +115,7 @@ public class Add extends javax.swing.JFrame {
          JOptionPane.showMessageDialog(null, e.getMessage() ,"Error", 1);
 
      }
-       */ 
+      
     }//GEN-LAST:event_btnaddActionPerformed
 
     private void btnbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbackActionPerformed
