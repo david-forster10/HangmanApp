@@ -92,7 +92,9 @@ public class Add extends javax.swing.JFrame {
 
     private void btnaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaddActionPerformed
         // TODO add your handling code here:
-     
+         String word;
+         word = txtword.getText();
+         
     try
      {
          Class.forName("com.mysql.jdbc.Driver");
@@ -100,16 +102,37 @@ public class Add extends javax.swing.JFrame {
          Statement stmt=(Statement)con.createStatement();
 
          //txtword.getText();
-         
 
-       String insert="INSERT INTO tblwords VALUES('"+txtword.getText()+"');";
+         if (word.equals("")){
+            JOptionPane.showMessageDialog(null,"Please enter a word.", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
+         }
+   
+         if (word.matches("^[0-9]*$")){
+             JOptionPane.showMessageDialog(null,"Please do not enter numbers", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
+         }
+         
+           if (word.matches(".*\\s+.*")){
+             JOptionPane.showMessageDialog(null,"Please do not enter multiple words", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
+         }
+           
+           else if (word.matches("[a-zA-Z]")){
+
+       String insert="INSERT INTO tblwords VALUES('"+word+"');";
        stmt.executeUpdate(insert);
        
        JOptionPane.showMessageDialog(null, "success", "system", JOptionPane.INFORMATION_MESSAGE);
+           }
        
+      else {
+       
+       JOptionPane.showMessageDialog(null,"Please do not enter invalid characters", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
+               }
+               
        txtword.setText("");
+       
 
      }
+     
      catch(Exception e)
      {
          JOptionPane.showMessageDialog(null, e.getMessage() ,"Error", 1);
