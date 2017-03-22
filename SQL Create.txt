@@ -2,7 +2,6 @@ CREATE TABLE `tblwords` (
 	`Word` VARCHAR(15) NOT NULL
 )
 COLLATE='latin1_swedish_ci'
-ENGINE=InnoDB
-;
+ENGINE=InnoDB;
 
-INSERT INTO tblwords VALUES (hello, goodbye, skyline, evolution, city, computer, ashes, gaming, music, graph, watch, japan, people, car, test, true)
+INSERT INTO tblwords() VALUES ('hello'), ('goodbye'), ('skyline'), ('evolution'), ('city'), ('computer'), ('ashes'), ('gaming'), ('music'), ('graph'), ('watch'), ('japan'), ('people'), ('car'), ('test'), ('true');
