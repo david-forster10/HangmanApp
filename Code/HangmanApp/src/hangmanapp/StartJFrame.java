@@ -6,6 +6,7 @@
 package hangmanapp;
 
 import java.awt.Color;
+import java.awt.SplashScreen;
 import javax.swing.JButton;
 
 /**
