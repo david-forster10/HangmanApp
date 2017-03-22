@@ -53,6 +53,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         lbl_timergraphic = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setAlwaysOnTop(true);
         setPreferredSize(new java.awt.Dimension(961, 665));
 
         lblWord.setFont(new java.awt.Font("Tahoma", 0, 75)); // NOI18N
@@ -262,6 +263,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
