@@ -41,6 +41,11 @@ public class StartJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -193,6 +198,12 @@ public class StartJFrame extends javax.swing.JFrame {
         new Add().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnAddActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        btnPlay.setBackground(new JButton().getBackground());
+        btnAdd.setBackground(new JButton().getBackground());
+        btnExit.setBackground(new JButton().getBackground());
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
