@@ -52,7 +52,7 @@ public class StartJFrame extends javax.swing.JFrame {
         lblDescription.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblDescription.setText("Teaching kids about torture since 1894");
 
-        btnPlay.setBackground(new java.awt.Color(0, 0, 0));
+        btnPlay.setBackground(new java.awt.Color(255, 255, 255));
         btnPlay.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         btnPlay.setText("PLAY");
         btnPlay.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -67,7 +67,7 @@ public class StartJFrame extends javax.swing.JFrame {
             }
         });
 
-        btnAdd.setBackground(new java.awt.Color(0, 0, 0));
+        btnAdd.setBackground(new java.awt.Color(255, 255, 255));
         btnAdd.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         btnAdd.setText("ADD");
         btnAdd.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -84,7 +84,7 @@ public class StartJFrame extends javax.swing.JFrame {
             }
         });
 
-        btnExit.setBackground(new java.awt.Color(0, 0, 0));
+        btnExit.setBackground(new java.awt.Color(255, 255, 255));
         btnExit.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         btnExit.setText("EXIT");
         btnExit.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -109,14 +109,14 @@ public class StartJFrame extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(lblWelcome))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(180, 180, 180)
-                        .addComponent(lblDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(255, 255, 255)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(btnAdd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnExit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnPlay, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(btnPlay, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(172, 172, 172)
+                        .addComponent(lblDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
