@@ -8,6 +8,8 @@ package hangmanapp;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 
 /**
@@ -92,46 +94,40 @@ public class Add extends javax.swing.JFrame {
 
     private void btnaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaddActionPerformed
         // TODO add your handling code here:
-         String word;
-         word = txtword.getText();
+        String word;
+        word = txtword.getText();
+         
+        Pattern regex = Pattern.compile("[£%!$&+,:;=\\[\\]?@*\\(\\)^<>.?/\\{\\}@'~+-_`¬#\"|]");
+        Matcher matcher = regex.matcher(word);
          
     try
-     {
-         Class.forName("com.mysql.jdbc.Driver");
-         Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/hangman","user","user");
-         Statement stmt=(Statement)con.createStatement();
+    {
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/hangman","user","user");
+        Statement stmt=(Statement)con.createStatement();
 
-         //txtword.getText();
-
-         if (word.equals("")){
-            JOptionPane.showMessageDialog(null,"Please enter a word.", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
-         }
-   
-         if (word.matches("^[0-9]*$")){
-             JOptionPane.showMessageDialog(null,"Please do not enter numbers", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
-         }
-         
-           if (word.matches(".*\\s+.*")){
-             JOptionPane.showMessageDialog(null,"Please do not enter multiple words", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
-         }
-           
-           else if (word.matches("[a-zA-Z]")){
-
-       String insert="INSERT INTO tblwords VALUES('"+word+"');";
-       stmt.executeUpdate(insert);
+        //txtword.getText();
+       if (word.equals("")){
+           JOptionPane.showMessageDialog(null,"Please enter a word.", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
+        }
+        else if (word.matches("^[0-9]*$")){
+            JOptionPane.showMessageDialog(null,"Please do not enter numbers", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
+        }
+        else if (word.matches(".*\\s+.*")){
+            JOptionPane.showMessageDialog(null,"Please do not enter multiple words", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
+        }
+        else if (matcher.find()){
+            JOptionPane.showMessageDialog(null,"Please do not enter invalid characters", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
+        }
+        else {
+            String insert="INSERT INTO tblwords VALUES('"+word+"');";
+            stmt.executeUpdate(insert);
        
-       JOptionPane.showMessageDialog(null, "success", "system", JOptionPane.INFORMATION_MESSAGE);
-           }
-       
-      else {
-       
-       JOptionPane.showMessageDialog(null,"Please do not enter invalid characters", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
-               }
+           JOptionPane.showMessageDialog(null, "success", "system", JOptionPane.INFORMATION_MESSAGE);
+        }
                
        txtword.setText("");
-       
-
-     }
+    }
      
      catch(Exception e)
      {
@@ -140,7 +136,7 @@ public class Add extends javax.swing.JFrame {
      }
       
     }//GEN-LAST:event_btnaddActionPerformed
-
+    
     private void btnbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbackActionPerformed
         // TODO add your handling code here:
         new StartJFrame().setVisible(true);
