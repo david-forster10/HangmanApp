@@ -94,6 +94,7 @@ public class Add extends javax.swing.JFrame {
 
     private void btnaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaddActionPerformed
         // TODO add your handling code here:
+        
         String word;
         word = txtword.getText();
          
@@ -120,10 +121,19 @@ public class Add extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Please do not enter invalid characters", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
         }
         else {
+            boolean added = true;
+            for (int i = 0; i < Global.Database.size(); i++) {
+            if (word.equals(Global.Database.get(i))){
+               JOptionPane.showMessageDialog(null,"Word is already in the database", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
+               added = false;
+            }
+            }
+            if (added == true) {
             String insert="INSERT INTO tblwords VALUES('"+word+"');";
             stmt.executeUpdate(insert);
        
            JOptionPane.showMessageDialog(null, "success", "system", JOptionPane.INFORMATION_MESSAGE);
+            }
         }
                
        txtword.setText("");
