@@ -673,20 +673,22 @@ public class MainStageJFrame extends javax.swing.JFrame {
     
     public void Compare()
     { 
+        StringBuilder Unmasking = new StringBuilder((String)lblWord.getText());
         boolean matched = false;
         for (int i = 0; i < word.length(); i++) 
         {
             if (word.charAt(i) == SelectedLetter)
             {
-                JOptionPane.showMessageDialog(null,"This should be a match at index " + i, "ERROR!", JOptionPane.INFORMATION_MESSAGE);
+                Unmasking.setCharAt(i*2, SelectedLetter);
+                lblWord.setText(Unmasking.toString());
                 matched = true;
             }
         }
-            if (matched == false){
-            {
-                JOptionPane.showMessageDialog(null,"wrong", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
-            }   
-            }
+        
+        if (matched == false)
+        {
+            JOptionPane.showMessageDialog(null,"wrong", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
+        }     
     }
     
     
