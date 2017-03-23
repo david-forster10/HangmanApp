@@ -212,6 +212,8 @@ public class StartJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPlayMouseEntered
 
     private void btnPlayMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPlayMouseClicked
+        new MainStageJFrame().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnPlayMouseClicked
 
     private void btnAddMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddMouseClicked
@@ -251,8 +253,7 @@ public class StartJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlayActionPerformed
-        new MainStageJFrame().setVisible(true);
-        this.dispose();
+
     }//GEN-LAST:event_btnPlayActionPerformed
 
     public static void main(String args[]) {
