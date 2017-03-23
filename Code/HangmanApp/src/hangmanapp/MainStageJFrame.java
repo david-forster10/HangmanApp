@@ -6,7 +6,6 @@ import javax.swing.JOptionPane;
 
 public class MainStageJFrame extends javax.swing.JFrame {
     
-
     char SelectedLetter;
     String word; 
     String masked_word = "";
@@ -15,6 +14,8 @@ public class MainStageJFrame extends javax.swing.JFrame {
     Random randomGenerator = new Random();
 
     public String next() {
+        
+        image9.setOpaque(true);
 
         // Value retrieved from array-list
         String item = null;
@@ -90,7 +91,15 @@ public class MainStageJFrame extends javax.swing.JFrame {
         btnGuess = new javax.swing.JButton();
         lbl_timergraphic = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        image8 = new javax.swing.JLabel();
+        image1 = new javax.swing.JLabel();
+        image3 = new javax.swing.JLabel();
+        image5 = new javax.swing.JLabel();
+        image4 = new javax.swing.JLabel();
+        image6 = new javax.swing.JLabel();
+        image9 = new javax.swing.JLabel();
+        image7 = new javax.swing.JLabel();
+        image2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -309,8 +318,41 @@ public class MainStageJFrame extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/NewGif4.gif"))); // NOI18N
-        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        image8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif8.png"))); // NOI18N
+        image8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        image8.setOpaque(true);
+
+        image1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif1.png"))); // NOI18N
+        image1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        image1.setOpaque(true);
+
+        image3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif2.png"))); // NOI18N
+        image3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        image3.setOpaque(true);
+
+        image5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif3.png"))); // NOI18N
+        image5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        image5.setOpaque(true);
+
+        image4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif3.png"))); // NOI18N
+        image4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        image4.setOpaque(true);
+
+        image6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif3.png"))); // NOI18N
+        image6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        image6.setOpaque(true);
+
+        image9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif9.png"))); // NOI18N
+        image9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        image9.setOpaque(true);
+
+        image7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif7.png"))); // NOI18N
+        image7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        image7.setOpaque(true);
+
+        image2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif2.png"))); // NOI18N
+        image2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        image2.setOpaque(true);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -318,14 +360,95 @@ public class MainStageJFrame extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(image8, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                    .addContainerGap(20, Short.MAX_VALUE)
+                    .addComponent(image1, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap()))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                    .addContainerGap(20, Short.MAX_VALUE)
+                    .addComponent(image3, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap()))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(image5)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(image4)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(image6)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(image9)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                    .addContainerGap(19, Short.MAX_VALUE)
+                    .addComponent(image7)
+                    .addContainerGap()))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                    .addContainerGap(24, Short.MAX_VALUE)
+                    .addComponent(image2)
+                    .addGap(5, 5, 5)))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 489, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(image8, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(image1, javax.swing.GroupLayout.PREFERRED_SIZE, 489, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap()))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                    .addContainerGap(21, Short.MAX_VALUE)
+                    .addComponent(image3, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(12, 12, 12)))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(image5)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(image4)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(image6)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(image9)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                    .addContainerGap(21, Short.MAX_VALUE)
+                    .addComponent(image7)
+                    .addGap(1, 1, 1)))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                    .addContainerGap(21, Short.MAX_VALUE)
+                    .addComponent(image2)
+                    .addGap(1, 1, 1)))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -756,7 +879,15 @@ public class MainStageJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btn_x;
     private javax.swing.JButton btn_y;
     private javax.swing.JButton btn_z;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel image1;
+    private javax.swing.JLabel image2;
+    private javax.swing.JLabel image3;
+    private javax.swing.JLabel image4;
+    private javax.swing.JLabel image5;
+    private javax.swing.JLabel image6;
+    private javax.swing.JLabel image7;
+    private javax.swing.JLabel image8;
+    private javax.swing.JLabel image9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;
