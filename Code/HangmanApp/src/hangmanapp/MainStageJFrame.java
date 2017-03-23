@@ -8,9 +8,6 @@ public class MainStageJFrame extends javax.swing.JFrame {
     
     String SelectedLetter;
     String word; 
-
-    String SelectedLetter;
-    String word;
     
     // Random number generator instance
     Random randomGenerator = new Random();
@@ -474,11 +471,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-<<<<<<< HEAD
        word = next();
-=======
-        word = next();
->>>>>>> origin/Main-stage
     }//GEN-LAST:event_formWindowOpened
 
     private void btn_qActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_qActionPerformed
