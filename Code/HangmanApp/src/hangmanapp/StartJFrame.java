@@ -58,12 +58,17 @@ public class StartJFrame extends javax.swing.JFrame {
         lblWelcome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Text.png"))); // NOI18N
         lblWelcome.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        lblDescription.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblDescription.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblDescription.setText("Teaching kids about torture since 1894");
 
         btnPlay.setBackground(new java.awt.Color(255, 255, 255));
         btnPlay.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         btnPlay.setText("PLAY");
+        btnPlay.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                btnPlayStateChanged(evt);
+            }
+        });
         btnPlay.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnPlayMouseClicked(evt);
@@ -73,6 +78,14 @@ public class StartJFrame extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnPlayMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnPlayMousePressed(evt);
+            }
+        });
+        btnPlay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPlayActionPerformed(evt);
             }
         });
 
@@ -85,6 +98,9 @@ public class StartJFrame extends javax.swing.JFrame {
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnAddMouseEntered(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnAddMousePressed(evt);
             }
         });
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
@@ -106,6 +122,14 @@ public class StartJFrame extends javax.swing.JFrame {
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnExitMouseExited(evt);
             }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnExitMousePressed(evt);
+            }
+        });
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
         });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -117,17 +141,16 @@ public class StartJFrame extends javax.swing.JFrame {
                 .addComponent(lblWelcome)
                 .addGap(0, 22, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(242, 242, 242)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(168, 168, 168)
-                        .addComponent(lblDescription))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(242, 242, 242)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnPlay, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnExit))))
+                    .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnPlay, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnExit))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblDescription)
+                .addGap(131, 131, 131))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -184,16 +207,12 @@ public class StartJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPlayMouseEntered
 
     private void btnPlayMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPlayMouseClicked
-        btnPlay.setBackground(Color.GREEN);
     }//GEN-LAST:event_btnPlayMouseClicked
 
     private void btnAddMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddMouseClicked
-        btnAdd.setBackground(Color.GREEN);
     }//GEN-LAST:event_btnAddMouseClicked
 
     private void btnExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitMouseClicked
-        btnExit.setBackground(Color.GREEN);
-         this.dispose();
     }//GEN-LAST:event_btnExitMouseClicked
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
@@ -206,6 +225,30 @@ public class StartJFrame extends javax.swing.JFrame {
         btnAdd.setBackground(new JButton().getBackground());
         btnExit.setBackground(new JButton().getBackground());
     }//GEN-LAST:event_formWindowOpened
+
+    private void btnPlayMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPlayMousePressed
+        btnPlay.setBackground(Color.GREEN);
+    }//GEN-LAST:event_btnPlayMousePressed
+
+    private void btnAddMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddMousePressed
+        btnAdd.setBackground(Color.GREEN);
+    }//GEN-LAST:event_btnAddMousePressed
+
+    private void btnExitMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExitMousePressed
+        btnExit.setBackground(Color.GREEN);
+    }//GEN-LAST:event_btnExitMousePressed
+
+    private void btnPlayStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_btnPlayStateChanged
+    }//GEN-LAST:event_btnPlayStateChanged
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnExitActionPerformed
+
+    private void btnPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlayActionPerformed
+        new MainStageJFrame().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnPlayActionPerformed
 
     /**
      * @param args the command line arguments
