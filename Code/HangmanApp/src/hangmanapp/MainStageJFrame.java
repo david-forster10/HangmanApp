@@ -5,6 +5,9 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class MainStageJFrame extends javax.swing.JFrame {
+    
+    String SelectedLetter;
+    String word; 
 
     // Random number generator instance
     Random randomGenerator = new Random();
@@ -97,56 +100,186 @@ public class MainStageJFrame extends javax.swing.JFrame {
         lblWord.setText("_ _ _ _ _ _ _ _ _");
 
         btn_q.setText("q");
+        btn_q.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_qActionPerformed(evt);
+            }
+        });
 
         btn_w.setText("w");
+        btn_w.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_wActionPerformed(evt);
+            }
+        });
 
         btn_e.setText("e");
+        btn_e.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_eActionPerformed(evt);
+            }
+        });
 
         btn_r.setText("r");
+        btn_r.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_rActionPerformed(evt);
+            }
+        });
 
         btn_t.setText("t");
+        btn_t.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tActionPerformed(evt);
+            }
+        });
 
         btn_y.setText("y");
+        btn_y.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_yActionPerformed(evt);
+            }
+        });
 
         btn_u.setText("u");
+        btn_u.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_uActionPerformed(evt);
+            }
+        });
 
         btn_i.setText("i");
+        btn_i.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_iActionPerformed(evt);
+            }
+        });
 
         btn_o.setText("o");
+        btn_o.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_oActionPerformed(evt);
+            }
+        });
 
         btn_p.setText("p");
+        btn_p.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_pActionPerformed(evt);
+            }
+        });
 
         btn_a.setText("a");
+        btn_a.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_aActionPerformed(evt);
+            }
+        });
 
         btn_s.setText("s");
+        btn_s.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_sActionPerformed(evt);
+            }
+        });
 
         btn_d.setText("d");
+        btn_d.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_dActionPerformed(evt);
+            }
+        });
 
         btn_f.setText("f");
+        btn_f.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_fActionPerformed(evt);
+            }
+        });
 
         btn_g.setText("g");
+        btn_g.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_gActionPerformed(evt);
+            }
+        });
 
         btn_h.setText("h");
+        btn_h.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_hActionPerformed(evt);
+            }
+        });
 
         btn_j.setText("j");
+        btn_j.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_jActionPerformed(evt);
+            }
+        });
 
         btn_k.setText("k");
+        btn_k.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_kActionPerformed(evt);
+            }
+        });
 
         btn_l.setText("l");
+        btn_l.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_lActionPerformed(evt);
+            }
+        });
 
         btn_z.setText("z");
+        btn_z.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_zActionPerformed(evt);
+            }
+        });
 
         btn_x.setText("x");
+        btn_x.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_xActionPerformed(evt);
+            }
+        });
 
         btn_c.setText("c");
+        btn_c.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_cActionPerformed(evt);
+            }
+        });
 
         btn_v.setText("v");
+        btn_v.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_vActionPerformed(evt);
+            }
+        });
 
         btn_b.setText("b");
+        btn_b.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_bActionPerformed(evt);
+            }
+        });
 
         btn_m.setText("m");
+        btn_m.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_mActionPerformed(evt);
+            }
+        });
 
         btn_n.setText("n");
+        btn_n.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_nActionPerformed(evt);
+            }
+        });
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
@@ -329,9 +462,148 @@ public class MainStageJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        next();
+       word = next();
     }//GEN-LAST:event_formWindowOpened
 
+    private void btn_qActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_qActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "q";
+    }//GEN-LAST:event_btn_qActionPerformed
+
+    private void btn_wActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_wActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "w";
+    }//GEN-LAST:event_btn_wActionPerformed
+
+    private void btn_eActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "e";
+    }//GEN-LAST:event_btn_eActionPerformed
+
+    private void btn_rActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_rActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "r";
+    }//GEN-LAST:event_btn_rActionPerformed
+
+    private void btn_tActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_tActionPerformed
+
+    private void btn_yActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_yActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "y";
+    }//GEN-LAST:event_btn_yActionPerformed
+
+    private void btn_uActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_uActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "u";
+    }//GEN-LAST:event_btn_uActionPerformed
+
+    private void btn_iActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_iActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "i";
+    }//GEN-LAST:event_btn_iActionPerformed
+
+    private void btn_oActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_oActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "o";
+    }//GEN-LAST:event_btn_oActionPerformed
+
+    private void btn_pActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_pActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "p";
+    }//GEN-LAST:event_btn_pActionPerformed
+
+    private void btn_aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_aActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "a";
+    }//GEN-LAST:event_btn_aActionPerformed
+
+    private void btn_sActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "s";
+    }//GEN-LAST:event_btn_sActionPerformed
+
+    private void btn_dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_dActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "d";
+    }//GEN-LAST:event_btn_dActionPerformed
+
+    private void btn_fActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_fActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "f";
+    }//GEN-LAST:event_btn_fActionPerformed
+
+    private void btn_gActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_gActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "g";
+    }//GEN-LAST:event_btn_gActionPerformed
+
+    private void btn_hActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_hActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "h";
+    }//GEN-LAST:event_btn_hActionPerformed
+
+    private void btn_jActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_jActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "j";
+    }//GEN-LAST:event_btn_jActionPerformed
+
+    private void btn_kActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_kActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "k";
+    }//GEN-LAST:event_btn_kActionPerformed
+
+    private void btn_lActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_lActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "l";
+    }//GEN-LAST:event_btn_lActionPerformed
+
+    private void btn_zActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_zActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "z";
+    }//GEN-LAST:event_btn_zActionPerformed
+
+    private void btn_xActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_xActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "x";
+    }//GEN-LAST:event_btn_xActionPerformed
+
+    private void btn_cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "c";
+    }//GEN-LAST:event_btn_cActionPerformed
+
+    private void btn_vActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_vActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "v";
+    }//GEN-LAST:event_btn_vActionPerformed
+
+    private void btn_bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_bActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "b";
+    }//GEN-LAST:event_btn_bActionPerformed
+
+    private void btn_nActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "n";
+    }//GEN-LAST:event_btn_nActionPerformed
+
+    private void btn_mActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_mActionPerformed
+        // TODO add your handling code here:
+        SelectedLetter = "m";
+    }//GEN-LAST:event_btn_mActionPerformed
+
+    
+    public void Compare(String args[]){
+         for (int i = 0; i < word.length(); i++) {
+    if (word.charAt(i) == SelectedLetter) {
+    System.out.println("This should be a match at index " + i);
+    }
+    }
+    }
+    
+    
     /**
      * @param args the command line arguments
      */

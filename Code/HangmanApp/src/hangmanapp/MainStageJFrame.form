@@ -220,131 +220,209 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="q"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_qActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_w">
           <Properties>
             <Property name="text" type="java.lang.String" value="w"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_wActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_e">
           <Properties>
             <Property name="text" type="java.lang.String" value="e"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_eActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_r">
           <Properties>
             <Property name="text" type="java.lang.String" value="r"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_rActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_t">
           <Properties>
             <Property name="text" type="java.lang.String" value="t"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_tActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_y">
           <Properties>
             <Property name="text" type="java.lang.String" value="y"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_yActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_u">
           <Properties>
             <Property name="text" type="java.lang.String" value="u"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_uActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_i">
           <Properties>
             <Property name="text" type="java.lang.String" value="i"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_iActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_o">
           <Properties>
             <Property name="text" type="java.lang.String" value="o"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_oActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_p">
           <Properties>
             <Property name="text" type="java.lang.String" value="p"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_pActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_a">
           <Properties>
             <Property name="text" type="java.lang.String" value="a"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_aActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_s">
           <Properties>
             <Property name="text" type="java.lang.String" value="s"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_sActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_d">
           <Properties>
             <Property name="text" type="java.lang.String" value="d"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_dActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_f">
           <Properties>
             <Property name="text" type="java.lang.String" value="f"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_fActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_g">
           <Properties>
             <Property name="text" type="java.lang.String" value="g"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_gActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_h">
           <Properties>
             <Property name="text" type="java.lang.String" value="h"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_hActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_j">
           <Properties>
             <Property name="text" type="java.lang.String" value="j"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_jActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_k">
           <Properties>
             <Property name="text" type="java.lang.String" value="k"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_kActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_l">
           <Properties>
             <Property name="text" type="java.lang.String" value="l"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_lActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_z">
           <Properties>
             <Property name="text" type="java.lang.String" value="z"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_zActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_x">
           <Properties>
             <Property name="text" type="java.lang.String" value="x"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_xActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_c">
           <Properties>
             <Property name="text" type="java.lang.String" value="c"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_cActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_v">
           <Properties>
             <Property name="text" type="java.lang.String" value="v"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_vActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_b">
           <Properties>
             <Property name="text" type="java.lang.String" value="b"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_bActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_m">
           <Properties>
             <Property name="text" type="java.lang.String" value="m"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_mActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn_n">
           <Properties>
             <Property name="text" type="java.lang.String" value="n"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_nActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField1">
           <Properties>
