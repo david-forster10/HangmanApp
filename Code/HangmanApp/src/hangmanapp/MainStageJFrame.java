@@ -10,18 +10,22 @@ import java.io.File;
 
 public class MainStageJFrame extends javax.swing.JFrame {
     
-
     char SelectedLetter;
     String word; 
     String masked_word = "";
+<<<<<<< HEAD
     File wavCorrect = new File("C:\\Users\\Vanilla\\Documents\\GitHub\\HangmanApp\\Code\\HangmanApp\\src\\hangmanapp\\sounds\\correct.mp3");
     AudioClip sndCorrect;
+=======
+    int WrongGuesses = 0;
+   
+>>>>>>> origin/Main-stage
     
     // Random number generator instance
     Random randomGenerator = new Random();
 
     public String next() {
-
+     
         // Value retrieved from array-list
         String item = null;
         // Index to be read from array-list
@@ -53,6 +57,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
    
     public MainStageJFrame() 
     {
+<<<<<<< HEAD
         initComponents(); 
         try 
         {
@@ -63,6 +68,20 @@ public class MainStageJFrame extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }
+=======
+        initComponents();   
+        image1.setVisible(true);
+        image2.setVisible(false);
+        image3.setVisible(false);
+        image4.setVisible(false);
+        image5.setVisible(false);
+        image6.setVisible(false);
+        image7.setVisible(false);
+        image8.setVisible(false);
+        image9.setVisible(false);
+        
+}
+>>>>>>> origin/Main-stage
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -101,7 +120,15 @@ public class MainStageJFrame extends javax.swing.JFrame {
         btnGuess = new javax.swing.JButton();
         lbl_timergraphic = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        image8 = new javax.swing.JLabel();
+        image1 = new javax.swing.JLabel();
+        image3 = new javax.swing.JLabel();
+        image5 = new javax.swing.JLabel();
+        image4 = new javax.swing.JLabel();
+        image6 = new javax.swing.JLabel();
+        image9 = new javax.swing.JLabel();
+        image7 = new javax.swing.JLabel();
+        image2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -319,25 +346,43 @@ public class MainStageJFrame extends javax.swing.JFrame {
         lbl_timergraphic.setIconTextGap(-115);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new javax.swing.OverlayLayout(jPanel2));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/NewGif4.gif"))); // NOI18N
-        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        image8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif8.png"))); // NOI18N
+        image8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(image8);
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 489, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+        image1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif1.png"))); // NOI18N
+        image1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(image1);
+
+        image3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif3.png"))); // NOI18N
+        image3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(image3);
+
+        image5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif5.png"))); // NOI18N
+        image5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(image5);
+
+        image4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif4.png"))); // NOI18N
+        image4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(image4);
+
+        image6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif6.png"))); // NOI18N
+        image6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(image6);
+
+        image9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif9.png"))); // NOI18N
+        image9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(image9);
+
+        image7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif7.png"))); // NOI18N
+        image7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(image7);
+
+        image2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif2.png"))); // NOI18N
+        image2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(image2);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -487,9 +532,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -700,6 +743,46 @@ public class MainStageJFrame extends javax.swing.JFrame {
         if (matched == false)
         {
             JOptionPane.showMessageDialog(null,"wrong", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
+            WrongGuesses = WrongGuesses + 1;
+            switch (WrongGuesses) {
+                case 1:
+                    image1.setVisible(false);
+                    image2.setVisible(true);
+                    break;
+                case 2:
+                    image2.setVisible(false);
+                    image3.setVisible(true);
+                    break;
+                case 3:
+                   image3.setVisible(false);
+                    image4.setVisible(true);
+                    break;
+                case 4:
+                    image4.setVisible(false);
+                    image5.setVisible(true);
+                    break;
+                case 5:
+                    image5.setVisible(false);
+                    image6.setVisible(true);
+                    break;
+                case 6:
+                    image6.setVisible(false);
+                    image7.setVisible(true);
+                    break;
+                case 7:
+                    image7.setVisible(false);
+                    image8.setVisible(true);
+                    break;
+                case 8:
+                    image8.setVisible(false);
+                    image9.setVisible(true);
+                    JOptionPane.showMessageDialog(null,"Failed");
+                    new StartJFrame().setVisible(true);
+                    this.dispose();
+                    break;
+                default:
+                    break;
+            }
         }     
     }
     
@@ -768,7 +851,15 @@ public class MainStageJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btn_x;
     private javax.swing.JButton btn_y;
     private javax.swing.JButton btn_z;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel image1;
+    private javax.swing.JLabel image2;
+    private javax.swing.JLabel image3;
+    private javax.swing.JLabel image4;
+    private javax.swing.JLabel image5;
+    private javax.swing.JLabel image6;
+    private javax.swing.JLabel image7;
+    private javax.swing.JLabel image8;
+    private javax.swing.JLabel image9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;
