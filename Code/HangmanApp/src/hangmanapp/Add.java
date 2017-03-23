@@ -123,8 +123,8 @@ public class Add extends javax.swing.JFrame {
         }
         else {
             boolean added = true;
-            for (int i = 0; i < Global.Database.size(); i++) {
-            if (word.equals(Global.Database.get(i))){
+            for (int i = 0; i < Global.Db.size(); i++) {
+            if (word.equals(Global.Db.get(i))){
                JOptionPane.showMessageDialog(null,"Word is already in the database", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
                added = false;
             }

@@ -43,7 +43,7 @@ public class HangmanApp extends Global
     rst = stmt.executeQuery(sql);
 
     while (rst.next()) {
-        Database.add(rst.getString("Word"));
+        Db.add(rst.getString("Word"));
     }
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(HangmanApp.class.getName()).log(Level.SEVERE, null, ex);

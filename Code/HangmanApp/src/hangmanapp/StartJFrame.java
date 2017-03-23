@@ -74,6 +74,11 @@ public class StartJFrame extends javax.swing.JFrame {
                 btnPlayMouseExited(evt);
             }
         });
+        btnPlay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPlayActionPerformed(evt);
+            }
+        });
 
         btnAdd.setBackground(new java.awt.Color(255, 255, 255));
         btnAdd.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
@@ -204,6 +209,13 @@ public class StartJFrame extends javax.swing.JFrame {
         btnAdd.setBackground(new JButton().getBackground());
         btnExit.setBackground(new JButton().getBackground());
     }//GEN-LAST:event_formWindowOpened
+
+    private void btnPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlayActionPerformed
+        // TODO add your handling code here:
+         new MainStageJFrame().setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_btnPlayActionPerformed
 
     /**
      * @param args the command line arguments
