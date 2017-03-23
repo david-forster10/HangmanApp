@@ -300,7 +300,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/NewGif2.gif"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/NewGif3.gif"))); // NOI18N
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -327,9 +327,10 @@ public class MainStageJFrame extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(lbl_guessesleftgraphic)
-                        .addGap(231, 231, 231)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lbl_timergraphic))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -477,139 +478,168 @@ public class MainStageJFrame extends javax.swing.JFrame {
     private void btn_qActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_qActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "q";
+        Compare();
     }//GEN-LAST:event_btn_qActionPerformed
 
     private void btn_wActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_wActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "w";
+        Compare();
     }//GEN-LAST:event_btn_wActionPerformed
 
     private void btn_eActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "e";
+        Compare();
     }//GEN-LAST:event_btn_eActionPerformed
 
     private void btn_rActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_rActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "r";
+        Compare();
     }//GEN-LAST:event_btn_rActionPerformed
 
     private void btn_tActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tActionPerformed
-        // TODO add your handling code here:
+        SelectedLetter = "t";
+        Compare();
     }//GEN-LAST:event_btn_tActionPerformed
 
     private void btn_yActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_yActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "y";
+        Compare();
     }//GEN-LAST:event_btn_yActionPerformed
 
     private void btn_uActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_uActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "u";
+        Compare();
     }//GEN-LAST:event_btn_uActionPerformed
 
     private void btn_iActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_iActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "i";
+        Compare();
     }//GEN-LAST:event_btn_iActionPerformed
 
     private void btn_oActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_oActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "o";
+        Compare();
     }//GEN-LAST:event_btn_oActionPerformed
 
     private void btn_pActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_pActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "p";
+        Compare();
     }//GEN-LAST:event_btn_pActionPerformed
 
     private void btn_aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_aActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "a";
+        Compare();
     }//GEN-LAST:event_btn_aActionPerformed
 
     private void btn_sActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "s";
+        Compare();
     }//GEN-LAST:event_btn_sActionPerformed
 
     private void btn_dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_dActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "d";
+        Compare();
     }//GEN-LAST:event_btn_dActionPerformed
 
     private void btn_fActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_fActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "f";
+        Compare();
     }//GEN-LAST:event_btn_fActionPerformed
 
     private void btn_gActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_gActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "g";
+        Compare();
     }//GEN-LAST:event_btn_gActionPerformed
 
     private void btn_hActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_hActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "h";
+        Compare();
     }//GEN-LAST:event_btn_hActionPerformed
 
     private void btn_jActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_jActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "j";
+        Compare();
     }//GEN-LAST:event_btn_jActionPerformed
 
     private void btn_kActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_kActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "k";
+        Compare();
     }//GEN-LAST:event_btn_kActionPerformed
 
     private void btn_lActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_lActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "l";
+        Compare();
     }//GEN-LAST:event_btn_lActionPerformed
 
     private void btn_zActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_zActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "z";
+        Compare();
     }//GEN-LAST:event_btn_zActionPerformed
 
     private void btn_xActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_xActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "x";
+        Compare();
     }//GEN-LAST:event_btn_xActionPerformed
 
     private void btn_cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "c";
+        Compare();
     }//GEN-LAST:event_btn_cActionPerformed
 
     private void btn_vActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_vActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "v";
+        Compare();
     }//GEN-LAST:event_btn_vActionPerformed
 
     private void btn_bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_bActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "b";
+        Compare();
     }//GEN-LAST:event_btn_bActionPerformed
 
     private void btn_nActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "n";
+        Compare();
     }//GEN-LAST:event_btn_nActionPerformed
 
     private void btn_mActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_mActionPerformed
         // TODO add your handling code here:
         SelectedLetter = "m";
+        Compare();
     }//GEN-LAST:event_btn_mActionPerformed
 
     
-    public void Compare(String args[]){
-         for (int i = 0; i < word.length(); i++) {
-    if (word.charAt(i) == SelectedLetter) {
-    System.out.println("This should be a match at index " + i);
-    }
-    }
+    public void Compare()
+    {
+        for (int i = 0; i < word.length(); i++) 
+        {
+            if (word.contains(SelectedLetter)) 
+            {
+                System.out.println("This should be a match at index " + i);
+            }
+        }
     }
     
     
