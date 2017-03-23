@@ -487,174 +487,174 @@ public class MainStageJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         SelectedLetter = 'q';
         Compare();
-        btn_q.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_qActionPerformed
 
     private void btn_wActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_wActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'w';
         Compare();
-        btn_w.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_wActionPerformed
 
     private void btn_eActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'e';
         Compare();
-        btn_e.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_eActionPerformed
 
     private void btn_rActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_rActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'r';
         Compare();
-        btn_r.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_rActionPerformed
 
     private void btn_tActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tActionPerformed
         SelectedLetter = 't';
         Compare();
-        btn_t.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_tActionPerformed
 
     private void btn_yActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_yActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'y';
         Compare();
-        btn_y.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_yActionPerformed
 
     private void btn_uActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_uActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'u';
         Compare();
-        btn_u.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_uActionPerformed
 
     private void btn_iActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_iActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'i';
         Compare();
-        btn_i.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_iActionPerformed
 
     private void btn_oActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_oActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'o';
         Compare();
-        btn_o.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_oActionPerformed
 
     private void btn_pActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_pActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'p';
         Compare();
-        btn_p.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_pActionPerformed
 
     private void btn_aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_aActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'a';
         Compare();
-        btn_a.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_aActionPerformed
 
     private void btn_sActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 's';
         Compare();
-        btn_s.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_sActionPerformed
 
     private void btn_dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_dActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'd';
         Compare();
-        btn_d.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_dActionPerformed
 
     private void btn_fActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_fActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'f';
         Compare();
-        btn_f.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_fActionPerformed
 
     private void btn_gActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_gActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'g';
         Compare();
-        btn_g.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_gActionPerformed
 
     private void btn_hActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_hActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'h';
         Compare();
-        btn_h.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_hActionPerformed
 
     private void btn_jActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_jActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'j';
         Compare();
-        btn_j.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_jActionPerformed
 
     private void btn_kActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_kActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'k';
         Compare();
-        btn_k.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_kActionPerformed
 
     private void btn_lActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_lActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'l';
         Compare();
-        btn_l.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_lActionPerformed
 
     private void btn_zActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_zActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'z';
         Compare();
-        btn_z.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_zActionPerformed
 
     private void btn_xActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_xActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'x';
         Compare();
-        btn_x.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_xActionPerformed
 
     private void btn_cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'c';
         Compare();
-        btn_c.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_cActionPerformed
 
     private void btn_vActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_vActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'v';
         Compare();
-        btn_v.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_vActionPerformed
 
     private void btn_bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_bActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'b';
         Compare();
-        btn_b.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_bActionPerformed
 
     private void btn_nActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nActionPerformed
         // TODO add your handling code here:
         SelectedLetter = 'n';
         Compare();
-        btn_n.setEnabled(false);
+        btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_nActionPerformed
 
     private void btn_mActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_mActionPerformed
@@ -666,22 +666,23 @@ public class MainStageJFrame extends javax.swing.JFrame {
 
     
     public void Compare()
-    {
-        boolean matched = false;
+    { 
         for (int i = 0; i < word.length(); i++) 
         {
             if (word.charAt(i) == SelectedLetter)
             {
                 JOptionPane.showMessageDialog(null,"This should be a match at index " + i, "ERROR!", JOptionPane.INFORMATION_MESSAGE);
-                matched = true;
             }   
-        }
-        
-        if (matched == false)
+    }
+         for (int i = 0; i < word.length(); i++) 
         {
-            JOptionPane.showMessageDialog(null,"No Match", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
-        }
-    }    
+            if (word.charAt(i) != SelectedLetter)
+            {
+                JOptionPane.showMessageDialog(null,"wrong", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
+            }   
+    }
+    }
+    
     
     /**
      * @param args the command line arguments
