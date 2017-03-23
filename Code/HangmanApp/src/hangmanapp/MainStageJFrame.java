@@ -1,8 +1,12 @@
 package hangmanapp;
 
+import java.applet.AudioClip;
 import java.util.Random;
-import java.util.Scanner;
 import javax.swing.JOptionPane;
+import java.applet.*;
+import java.io.File;
+
+//** add this into your application code as appropriate
 
 public class MainStageJFrame extends javax.swing.JFrame {
     
@@ -10,6 +14,8 @@ public class MainStageJFrame extends javax.swing.JFrame {
     char SelectedLetter;
     String word; 
     String masked_word = "";
+    File wavCorrect = new File("C:\\Users\\Vanilla\\Documents\\GitHub\\HangmanApp\\Code\\HangmanApp\\src\\hangmanapp\\sounds\\correct.mp3");
+    AudioClip sndCorrect;
     
     // Random number generator instance
     Random randomGenerator = new Random();
@@ -45,13 +51,18 @@ public class MainStageJFrame extends javax.swing.JFrame {
         return item;
     }
    
-    /**
-     * Creates new form MainStageJFrame
-     */
     public MainStageJFrame() 
     {
-        initComponents();   
-}
+        initComponents(); 
+        try 
+        {
+            sndCorrect = Applet.newAudioClip(wavCorrect.toURL());
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -682,9 +693,10 @@ public class MainStageJFrame extends javax.swing.JFrame {
                 Unmasking.setCharAt(i*2, SelectedLetter);
                 lblWord.setText(Unmasking.toString());
                 matched = true;
+                
+                sndCorrect.play();   //play once
             }
         }
-        
         if (matched == false)
         {
             JOptionPane.showMessageDialog(null,"wrong", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
