@@ -230,14 +230,7 @@ public class StartJFrame extends javax.swing.JFrame {
         btnAdd.setBackground(new JButton().getBackground());
         btnExit.setBackground(new JButton().getBackground());
     }//GEN-LAST:event_formWindowOpened
-
-<<<<<<< HEAD
-    private void btnPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlayActionPerformed
-        // TODO add your handling code here:
-         new MainStageJFrame().setVisible(true);
-        this.dispose();
         
-=======
     private void btnPlayMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPlayMousePressed
         btnPlay.setBackground(Color.GREEN);
     }//GEN-LAST:event_btnPlayMousePressed
@@ -260,7 +253,6 @@ public class StartJFrame extends javax.swing.JFrame {
     private void btnPlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlayActionPerformed
         new MainStageJFrame().setVisible(true);
         this.dispose();
->>>>>>> refs/remotes/origin/master
     }//GEN-LAST:event_btnPlayActionPerformed
 
     /**
