@@ -6,14 +6,10 @@ import javax.swing.JOptionPane;
 
 public class MainStageJFrame extends javax.swing.JFrame {
     
-<<<<<<< HEAD
+
     char SelectedLetter;
     String word; 
-=======
-    String SelectedLetter;
-    String word;
     String masked_word = "";
->>>>>>> origin/Main-stage
     
     // Random number generator instance
     Random randomGenerator = new Random();
