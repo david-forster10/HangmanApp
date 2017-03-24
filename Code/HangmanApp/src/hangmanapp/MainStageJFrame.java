@@ -13,14 +13,10 @@ public class MainStageJFrame extends javax.swing.JFrame {
     char SelectedLetter;
     String word; 
     String masked_word = "";
-<<<<<<< HEAD
     File wavCorrect = new File("C:\\Users\\Vanilla\\Documents\\GitHub\\HangmanApp\\Code\\HangmanApp\\src\\hangmanapp\\sounds\\correct.mp3");
     AudioClip sndCorrect;
-=======
     int WrongGuesses = 0;
-   
->>>>>>> origin/Main-stage
-    
+       
     // Random number generator instance
     Random randomGenerator = new Random();
 
@@ -57,19 +53,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
    
     public MainStageJFrame() 
     {
-<<<<<<< HEAD
         initComponents(); 
-        try 
-        {
-            sndCorrect = Applet.newAudioClip(wavCorrect.toURL());
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-    }
-=======
-        initComponents();   
         image1.setVisible(true);
         image2.setVisible(false);
         image3.setVisible(false);
@@ -79,9 +63,15 @@ public class MainStageJFrame extends javax.swing.JFrame {
         image7.setVisible(false);
         image8.setVisible(false);
         image9.setVisible(false);
-        
-}
->>>>>>> origin/Main-stage
+        try 
+        {
+            sndCorrect = Applet.newAudioClip(wavCorrect.toURL());
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
