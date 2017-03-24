@@ -3,8 +3,10 @@ package hangmanapp;
 import java.applet.AudioClip;
 import java.util.Random;
 import javax.swing.JOptionPane;
-import java.applet.*;
-import java.io.File;
+import sun.audio.*;    //import the sun.audio package
+import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 //** add this into your application code as appropriate
 
@@ -64,14 +66,6 @@ public class MainStageJFrame extends javax.swing.JFrame {
         image7.setVisible(false);
         image8.setVisible(false);
         image9.setVisible(false);
-        try 
-        {
-            sndCorrect = Applet.newAudioClip(wavCorrect.toURL());
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
     }
 
     @SuppressWarnings("unchecked")
@@ -722,7 +716,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
 
     
     public void Compare()
-    { 
+    {       
         StringBuilder Unmasking = new StringBuilder((String)lblWord.getText());
         boolean matched = false;
         for (int i = 0; i < word.length(); i++) 
@@ -733,14 +727,37 @@ public class MainStageJFrame extends javax.swing.JFrame {
                 lblWord.setText(Unmasking.toString());
                 matched = true;
                 correct = correct + 1;
-                sndCorrect.play();   //play once
+                try 
+                {
+                    InputStream in = new FileInputStream(new File("C:\\Users\\Vanilla\\Documents\\GitHub\\HangmanApp\\Code\\HangmanApp\\src\\hangmanapp\\sounds\\correct.wav"));
+                    AudioStream as;
+                    as = new AudioStream(in);
+                    AudioPlayer.player.start(as);
+                } 
+                catch (IOException ex) 
+                {
+                    Logger.getLogger(MainStageJFrame.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         }
         if (matched == false)
         {
-            JOptionPane.showMessageDialog(null,"wrong", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
             WrongGuesses = WrongGuesses + 1;
-            switch (WrongGuesses) {
+            
+                            try 
+                {
+                    InputStream in = new FileInputStream(new File("C:\\Users\\Vanilla\\Documents\\GitHub\\HangmanApp\\Code\\HangmanApp\\src\\hangmanapp\\sounds\\wrong.wav"));
+                    AudioStream as;
+                    as = new AudioStream(in);
+                    AudioPlayer.player.start(as);
+                } 
+                catch (IOException ex) 
+                {
+                    Logger.getLogger(MainStageJFrame.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                            
+            switch (WrongGuesses) 
+            {
                 case 1:
                     image10.setVisible(false);
                     image1.setVisible(true);
@@ -793,11 +810,12 @@ public class MainStageJFrame extends javax.swing.JFrame {
                     break;
             }
         }     
-        if (correct == word.length()) {
-                    JOptionPane.showMessageDialog(null,"Success");
-                    new StartJFrame().setVisible(true);
-                    this.dispose();
-                    }
+        if (correct == word.length()) 
+        {
+            JOptionPane.showMessageDialog(null,"Success");
+            new StartJFrame().setVisible(true);
+            this.dispose();
+        }
     }
     
     
