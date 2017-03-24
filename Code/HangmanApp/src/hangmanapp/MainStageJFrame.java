@@ -16,6 +16,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
     File wavCorrect = new File("C:\\Users\\Vanilla\\Documents\\GitHub\\HangmanApp\\Code\\HangmanApp\\src\\hangmanapp\\sounds\\correct.mp3");
     AudioClip sndCorrect;
     int WrongGuesses = 0;
+    int correct = 0;
        
     // Random number generator instance
     Random randomGenerator = new Random();
@@ -726,7 +727,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
                 Unmasking.setCharAt(i*2, SelectedLetter);
                 lblWord.setText(Unmasking.toString());
                 matched = true;
-                
+                correct = correct + 1;
                 sndCorrect.play();   //play once
             }
         }
@@ -738,34 +739,42 @@ public class MainStageJFrame extends javax.swing.JFrame {
                 case 1:
                     image1.setVisible(false);
                     image2.setVisible(true);
+                    lbl_guessesleftgraphic.setText("7");
                     break;
                 case 2:
                     image2.setVisible(false);
                     image3.setVisible(true);
+                    lbl_guessesleftgraphic.setText("6");
                     break;
                 case 3:
                    image3.setVisible(false);
                     image4.setVisible(true);
+                    lbl_guessesleftgraphic.setText("5");
                     break;
                 case 4:
                     image4.setVisible(false);
                     image5.setVisible(true);
+                    lbl_guessesleftgraphic.setText("4");
                     break;
                 case 5:
                     image5.setVisible(false);
                     image6.setVisible(true);
+                    lbl_guessesleftgraphic.setText("3");
                     break;
                 case 6:
                     image6.setVisible(false);
                     image7.setVisible(true);
+                    lbl_guessesleftgraphic.setText("2");
                     break;
                 case 7:
                     image7.setVisible(false);
                     image8.setVisible(true);
+                    lbl_guessesleftgraphic.setText("1");
                     break;
                 case 8:
                     image8.setVisible(false);
                     image9.setVisible(true);
+                    lbl_guessesleftgraphic.setText("0");
                     JOptionPane.showMessageDialog(null,"Failed");
                     new StartJFrame().setVisible(true);
                     this.dispose();
@@ -774,6 +783,11 @@ public class MainStageJFrame extends javax.swing.JFrame {
                     break;
             }
         }     
+        if (correct == word.length()) {
+                    JOptionPane.showMessageDialog(null,"Success");
+                    new StartJFrame().setVisible(true);
+                    this.dispose();
+                    }
     }
     
     
