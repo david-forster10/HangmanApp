@@ -726,6 +726,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         else if (!txtGuessWord.getText().equals(word))
         {
             WrongGuess();
+            txtGuessWord.setText("");
         }
     }//GEN-LAST:event_btnGuessMouseClicked
 
