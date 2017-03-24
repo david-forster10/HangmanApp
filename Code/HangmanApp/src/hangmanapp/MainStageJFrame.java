@@ -139,7 +139,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
-        setSize(new java.awt.Dimension(845, 630));
+        setSize(new java.awt.Dimension(917, 630));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
@@ -153,7 +153,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         lblWord.setText("_ _ _ _ _ _ _ _ _");
         lblWord.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        btn_q.setText("q");
+        btn_q.setText("Q");
         btn_q.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_q.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -161,7 +161,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_w.setText("w");
+        btn_w.setText("W");
         btn_w.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_w.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,7 +169,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_e.setText("e");
+        btn_e.setText("E");
         btn_e.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_e.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,7 +177,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_r.setText("r");
+        btn_r.setText("R");
         btn_r.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_r.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -185,7 +185,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_t.setText("t");
+        btn_t.setText("T");
         btn_t.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_t.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -193,7 +193,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_y.setText("y");
+        btn_y.setText("Y");
         btn_y.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_y.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,7 +201,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_u.setText("u");
+        btn_u.setText("U");
         btn_u.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_u.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -209,7 +209,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_i.setText("i");
+        btn_i.setText("I");
         btn_i.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_i.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -217,7 +217,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_o.setText("o");
+        btn_o.setText("O");
         btn_o.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_o.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -225,7 +225,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_p.setText("p");
+        btn_p.setText("P");
         btn_p.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_p.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -233,7 +233,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_a.setText("a");
+        btn_a.setText("A");
         btn_a.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_a.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -241,7 +241,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_s.setText("s");
+        btn_s.setText("S");
         btn_s.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_s.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -249,7 +249,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_d.setText("d");
+        btn_d.setText("D");
         btn_d.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_d.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -257,7 +257,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_f.setText("f");
+        btn_f.setText("F");
         btn_f.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_f.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -265,7 +265,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_g.setText("g");
+        btn_g.setText("G");
         btn_g.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_g.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -273,7 +273,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_h.setText("h");
+        btn_h.setText("H");
         btn_h.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_h.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -281,7 +281,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_j.setText("j");
+        btn_j.setText("J");
         btn_j.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_j.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -289,7 +289,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_k.setText("k");
+        btn_k.setText("K");
         btn_k.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_k.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -297,7 +297,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_l.setText("l");
+        btn_l.setText("L");
         btn_l.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_l.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -305,7 +305,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_z.setText("z");
+        btn_z.setText("Z");
         btn_z.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_z.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -313,7 +313,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_x.setText("x");
+        btn_x.setText("X");
         btn_x.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_x.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -321,7 +321,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_c.setText("c");
+        btn_c.setText("C");
         btn_c.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_c.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -329,7 +329,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_v.setText("v");
+        btn_v.setText("V");
         btn_v.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_v.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -337,7 +337,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_b.setText("b");
+        btn_b.setText("B");
         btn_b.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_b.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -345,7 +345,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_m.setText("m");
+        btn_m.setText("M");
         btn_m.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_m.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -353,7 +353,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        btn_n.setText("n");
+        btn_n.setText("N");
         btn_n.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_n.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -428,6 +428,14 @@ public class MainStageJFrame extends javax.swing.JFrame {
 
         btnPause.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/pause button.png"))); // NOI18N
         btnPause.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPause.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPauseMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnPauseMousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -789,6 +797,14 @@ public class MainStageJFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnGuessMouseClicked
 
+    private void btnPauseMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPauseMousePressed
+    }//GEN-LAST:event_btnPauseMousePressed
+
+    private void btnPauseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPauseMouseClicked
+        task.cancel();
+       
+    }//GEN-LAST:event_btnPauseMouseClicked
+
     
     public void Compare()
     {      
@@ -798,7 +814,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         {
             if (word.charAt(i) == SelectedLetter)
             {
-                Unmasking.setCharAt(i*2, SelectedLetter);
+                Unmasking.setCharAt(i*2, Character.toUpperCase(SelectedLetter));
                 lblWord.setText(Unmasking.toString());
                 matched = true;
                 correct = correct + 1;
