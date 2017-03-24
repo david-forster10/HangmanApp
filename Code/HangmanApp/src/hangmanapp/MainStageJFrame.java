@@ -596,6 +596,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+
         lbl_timergraphic.setVisible(true);
         lbl_timergraphic.setText("0:00");
         timer.scheduleAtFixedRate(task, 1000, 1000);
