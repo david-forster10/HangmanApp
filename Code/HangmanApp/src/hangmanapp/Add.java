@@ -8,6 +8,8 @@ package hangmanapp;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 
 /**
@@ -32,92 +34,142 @@ public class Add extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         txtword = new javax.swing.JTextField();
         btnadd = new javax.swing.JButton();
         btnback = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+
+        jLabel2.setText("jLabel2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("Add a word to the database ");
 
+        btnadd.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnadd.setText("Add");
+        btnadd.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnadd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnaddActionPerformed(evt);
             }
         });
 
+        btnback.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnback.setText("Back");
+        btnback.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnback.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnbackActionPerformed(evt);
             }
         });
 
+        jLabel3.setText("No words with more than 9 characters");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnback, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnadd, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(139, 139, 139))
             .addGroup(layout.createSequentialGroup()
+                .addGap(64, 64, 64)
+                .addComponent(txtword, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(66, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(89, 89, 89)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtword, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(151, 151, 151)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnback, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnadd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(115, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(99, 99, 99))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addGap(118, 118, 118))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42)
+                .addGap(10, 10, 10)
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
                 .addComponent(txtword, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
-                .addComponent(btnadd)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnadd, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnback)
-                .addGap(30, 30, 30))
+                .addComponent(btnback, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaddActionPerformed
         // TODO add your handling code here:
-     
-    /*   try
-     {
-         Class.forName("com.mysql.jdbc.Driver");
-         Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/hangman","user","user");
-         Statement stmt=(Statement)con.createStatement();
-
-         //txtword.getText();
+        
+        String word;
+        word = txtword.getText();
          
+        Pattern regex = Pattern.compile("[£%!$&+,:;=\\[\\]?@*\\(\\)^<>.?/\\{\\}@'~+-_`¬#\"|]");
+        Matcher matcher = regex.matcher(word);
+         
+    try
+    {
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/hangman","user","user");
+        Statement stmt=(Statement)con.createStatement();
 
-       String insert="INSERT INTO tblwords VALUES('"+txtword.getText()+"');";
-       stmt.executeUpdate(insert);
+        //txtword.getText();
+       if (word.equals("")){
+           JOptionPane.showMessageDialog(null,"Please enter a word.", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
+        }
+        else if (word.matches("^[0-9]*$")){
+            JOptionPane.showMessageDialog(null,"Please do not enter numbers", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
+        }
+        else if (word.matches(".*\\s+.*")){
+            JOptionPane.showMessageDialog(null,"Please do not enter multiple words", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
+        }
+        else if (word.length() > 9){
+            JOptionPane.showMessageDialog(null,"Please do not enter words containing more than 9 characters", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
+        }
+        else if (matcher.find()){
+            JOptionPane.showMessageDialog(null,"Please do not enter invalid characters", "ERROR!", JOptionPane.INFORMATION_MESSAGE); 
+        }
+        else {
+            boolean added = true;
+            for (int i = 0; i < Global.Db.size(); i++) {
+            if (word.equals(Global.Db.get(i))){
+               JOptionPane.showMessageDialog(null,"Word is already in the database", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
+               added = false;
+            }
+            }
+            if (added == true) {
+            String insert="INSERT INTO tblwords VALUES('"+word+"');";
+            stmt.executeUpdate(insert);
        
-       JOptionPane.showMessageDialog(null, "success", "system", JOptionPane.INFORMATION_MESSAGE);
-       
+           JOptionPane.showMessageDialog(null, "success", "system", JOptionPane.INFORMATION_MESSAGE);
+            }
+        }
+               
        txtword.setText("");
-
-     }
+    }
+     
      catch(Exception e)
      {
          JOptionPane.showMessageDialog(null, e.getMessage() ,"Error", 1);
 
      }
-       */ 
+      
     }//GEN-LAST:event_btnaddActionPerformed
-
+    
     private void btnbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbackActionPerformed
         // TODO add your handling code here:
         new StartJFrame().setVisible(true);
@@ -164,6 +216,8 @@ public class Add extends javax.swing.JFrame {
     private javax.swing.JButton btnadd;
     private javax.swing.JButton btnback;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JTextField txtword;
     // End of variables declaration//GEN-END:variables
 }

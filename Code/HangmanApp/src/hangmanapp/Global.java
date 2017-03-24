@@ -8,5 +8,5 @@ package hangmanapp;
 import java.util.ArrayList;
 
 public class Global {
-    public static ArrayList<String> Database = new ArrayList<String>();
+    public static ArrayList<String> Db = new ArrayList<String>();
 }
