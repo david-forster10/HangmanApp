@@ -45,7 +45,6 @@ public class MainStageJFrame extends javax.swing.JFrame {
                 masked_word = masked_word + "_ ";
             }
             lblWord.setText(masked_word);
-            JOptionPane.showMessageDialog(null, item, "ERROR!", JOptionPane.INFORMATION_MESSAGE);
         }
 
         // Return the item
@@ -55,7 +54,8 @@ public class MainStageJFrame extends javax.swing.JFrame {
     public MainStageJFrame() 
     {
         initComponents(); 
-        image1.setVisible(true);
+        image10.setVisible(true);
+        image1.setVisible(false);
         image2.setVisible(false);
         image3.setVisible(false);
         image4.setVisible(false);
@@ -114,6 +114,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         image8 = new javax.swing.JLabel();
         image1 = new javax.swing.JLabel();
         image3 = new javax.swing.JLabel();
+        image10 = new javax.swing.JLabel();
         image5 = new javax.swing.JLabel();
         image4 = new javax.swing.JLabel();
         image6 = new javax.swing.JLabel();
@@ -350,6 +351,10 @@ public class MainStageJFrame extends javax.swing.JFrame {
         image3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif3.png"))); // NOI18N
         image3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel2.add(image3);
+
+        image10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif10.png"))); // NOI18N
+        image10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(image10);
 
         image5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/Gif5.png"))); // NOI18N
         image5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -737,41 +742,46 @@ public class MainStageJFrame extends javax.swing.JFrame {
             WrongGuesses = WrongGuesses + 1;
             switch (WrongGuesses) {
                 case 1:
+                    image10.setVisible(false);
+                    image1.setVisible(true);
+                    lbl_guessesleftgraphic.setText("8");
+                    break;
+                case 2:
                     image1.setVisible(false);
                     image2.setVisible(true);
                     lbl_guessesleftgraphic.setText("7");
                     break;
-                case 2:
+                case 3:
                     image2.setVisible(false);
                     image3.setVisible(true);
                     lbl_guessesleftgraphic.setText("6");
                     break;
-                case 3:
+                case 4:
                    image3.setVisible(false);
                     image4.setVisible(true);
                     lbl_guessesleftgraphic.setText("5");
                     break;
-                case 4:
+                case 5:
                     image4.setVisible(false);
                     image5.setVisible(true);
                     lbl_guessesleftgraphic.setText("4");
                     break;
-                case 5:
+                case 6:
                     image5.setVisible(false);
                     image6.setVisible(true);
                     lbl_guessesleftgraphic.setText("3");
                     break;
-                case 6:
+                case 7:
                     image6.setVisible(false);
                     image7.setVisible(true);
                     lbl_guessesleftgraphic.setText("2");
                     break;
-                case 7:
+                case 8:
                     image7.setVisible(false);
                     image8.setVisible(true);
                     lbl_guessesleftgraphic.setText("1");
                     break;
-                case 8:
+                case 9:
                     image8.setVisible(false);
                     image9.setVisible(true);
                     lbl_guessesleftgraphic.setText("0");
@@ -856,6 +866,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btn_y;
     private javax.swing.JButton btn_z;
     private javax.swing.JLabel image1;
+    private javax.swing.JLabel image10;
     private javax.swing.JLabel image2;
     private javax.swing.JLabel image3;
     private javax.swing.JLabel image4;
