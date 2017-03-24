@@ -134,6 +134,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         image9 = new javax.swing.JLabel();
         image7 = new javax.swing.JLabel();
         image2 = new javax.swing.JLabel();
+        btnPause = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -152,6 +153,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         lblWord.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         btn_q.setText("q");
+        btn_q.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_q.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_qActionPerformed(evt);
@@ -159,6 +161,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_w.setText("w");
+        btn_w.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_w.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_wActionPerformed(evt);
@@ -166,6 +169,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_e.setText("e");
+        btn_e.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_e.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_eActionPerformed(evt);
@@ -173,6 +177,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_r.setText("r");
+        btn_r.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_r.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_rActionPerformed(evt);
@@ -180,6 +185,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_t.setText("t");
+        btn_t.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_t.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_tActionPerformed(evt);
@@ -187,6 +193,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_y.setText("y");
+        btn_y.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_y.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_yActionPerformed(evt);
@@ -194,6 +201,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_u.setText("u");
+        btn_u.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_u.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_uActionPerformed(evt);
@@ -201,6 +209,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_i.setText("i");
+        btn_i.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_i.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_iActionPerformed(evt);
@@ -208,6 +217,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_o.setText("o");
+        btn_o.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_o.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_oActionPerformed(evt);
@@ -215,6 +225,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_p.setText("p");
+        btn_p.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_p.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_pActionPerformed(evt);
@@ -222,6 +233,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_a.setText("a");
+        btn_a.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_a.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_aActionPerformed(evt);
@@ -229,6 +241,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_s.setText("s");
+        btn_s.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_s.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_sActionPerformed(evt);
@@ -236,6 +249,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_d.setText("d");
+        btn_d.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_d.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_dActionPerformed(evt);
@@ -243,6 +257,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_f.setText("f");
+        btn_f.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_f.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_fActionPerformed(evt);
@@ -250,6 +265,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_g.setText("g");
+        btn_g.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_g.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_gActionPerformed(evt);
@@ -257,6 +273,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_h.setText("h");
+        btn_h.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_h.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_hActionPerformed(evt);
@@ -264,6 +281,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_j.setText("j");
+        btn_j.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_j.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_jActionPerformed(evt);
@@ -271,6 +289,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_k.setText("k");
+        btn_k.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_k.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_kActionPerformed(evt);
@@ -278,6 +297,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_l.setText("l");
+        btn_l.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_l.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_lActionPerformed(evt);
@@ -285,6 +305,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_z.setText("z");
+        btn_z.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_z.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_zActionPerformed(evt);
@@ -292,6 +313,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_x.setText("x");
+        btn_x.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_x.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_xActionPerformed(evt);
@@ -299,6 +321,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_c.setText("c");
+        btn_c.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_c.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_cActionPerformed(evt);
@@ -306,6 +329,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_v.setText("v");
+        btn_v.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_v.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_vActionPerformed(evt);
@@ -313,6 +337,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_b.setText("b");
+        btn_b.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_b.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_bActionPerformed(evt);
@@ -320,6 +345,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_m.setText("m");
+        btn_m.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_m.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_mActionPerformed(evt);
@@ -327,6 +353,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         });
 
         btn_n.setText("n");
+        btn_n.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_n.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_nActionPerformed(evt);
@@ -344,6 +371,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
 
         btnGuess.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnGuess.setText("Guess the Word");
+        btnGuess.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnGuess.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnGuessMouseClicked(evt);
@@ -397,6 +425,9 @@ public class MainStageJFrame extends javax.swing.JFrame {
         image2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel2.add(image2);
 
+        btnPause.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/pause button.png"))); // NOI18N
+        btnPause.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -406,82 +437,81 @@ public class MainStageJFrame extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(lbl_guessesleftgraphic)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnPause)
+                        .addGap(134, 134, 134)
                         .addComponent(lbl_timergraphic))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(lblWord, javax.swing.GroupLayout.PREFERRED_SIZE, 611, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(85, 85, 85))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(0, 0, Short.MAX_VALUE)
-                                        .addComponent(lblWord, javax.swing.GroupLayout.PREFERRED_SIZE, 611, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(65, 65, 65)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(65, 65, 65)
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                                        .addComponent(btn_q)
-                                                        .addGap(2, 2, 2)
-                                                        .addComponent(btn_w)
-                                                        .addGap(2, 2, 2)
-                                                        .addComponent(btn_e)
-                                                        .addGap(2, 2, 2)
-                                                        .addComponent(btn_r)
-                                                        .addGap(2, 2, 2)
-                                                        .addComponent(btn_t)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(btn_y)
-                                                        .addGap(2, 2, 2)
-                                                        .addComponent(btn_u)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                        .addComponent(btn_i)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(btn_o)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(btn_p))
-                                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                                            .addGap(22, 22, 22)
-                                                            .addComponent(btn_a)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                            .addComponent(btn_s)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                            .addComponent(btn_d)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                            .addComponent(btn_f)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                            .addComponent(btn_g)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                            .addComponent(btn_h)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                            .addComponent(btn_j)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                            .addComponent(btn_k)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                            .addComponent(btn_l))
-                                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                            .addGap(75, 75, 75)
-                                                            .addComponent(btn_z)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                            .addComponent(btn_x)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                            .addComponent(btn_c)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                            .addComponent(btn_v)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                            .addComponent(btn_b)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                            .addComponent(btn_n)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                            .addComponent(btn_m)))))
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(116, 116, 116)
-                                                .addComponent(txtGuessWord, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(205, 205, 205)
-                                .addComponent(btnGuess, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(btn_q)
+                                                .addGap(2, 2, 2)
+                                                .addComponent(btn_w)
+                                                .addGap(2, 2, 2)
+                                                .addComponent(btn_e)
+                                                .addGap(2, 2, 2)
+                                                .addComponent(btn_r)
+                                                .addGap(2, 2, 2)
+                                                .addComponent(btn_t)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_y)
+                                                .addGap(2, 2, 2)
+                                                .addComponent(btn_u)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(btn_i)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_o)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(btn_p))
+                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                                    .addGap(22, 22, 22)
+                                                    .addComponent(btn_a)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(btn_s)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(btn_d)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(btn_f)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(btn_g)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(btn_h)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(btn_j)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(btn_k)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(btn_l))
+                                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                                    .addGap(75, 75, 75)
+                                                    .addComponent(btn_z)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(btn_x)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(btn_c)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                    .addComponent(btn_v)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(btn_b)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(btn_n)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(btn_m)))))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(116, 116, 116)
+                                        .addComponent(txtGuessWord, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(205, 205, 205)
+                                        .addComponent(btnGuess, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(6, 6, 6))
@@ -489,9 +519,13 @@ public class MainStageJFrame extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl_guessesleftgraphic)
-                    .addComponent(lbl_timergraphic))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lbl_guessesleftgraphic)
+                        .addComponent(lbl_timergraphic))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnPause)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -895,6 +929,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuess;
+    private javax.swing.JLabel btnPause;
     private javax.swing.JButton btn_a;
     private javax.swing.JButton btn_b;
     private javax.swing.JButton btn_c;
