@@ -5,6 +5,9 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 import java.applet.*;
 import java.io.File;
+import java.util.Scanner;
+import java.util.Timer;
+import java.util.TimerTask;
 
 //** add this into your application code as appropriate
 
@@ -17,16 +20,32 @@ public class MainStageJFrame extends javax.swing.JFrame {
     AudioClip sndCorrect;
     int WrongGuesses = 0;
     int correct = 0;
-       
+    int secondsPassed = 0;
+    int minutes = 0;
+    long startTime = System.currentTimeMillis();
+    Timer timer = new Timer();
+    TimerTask task = new TimerTask(){
+        public void run(){
+            secondsPassed++;
+            if (secondsPassed == 60){
+                secondsPassed = 0;
+                minutes += 1;            
+            }
+            lbl_timergraphic.setText(minutes + ":" + secondsPassed);
+        }
+    };
+            
     // Random number generator instance
     Random randomGenerator = new Random();
-
+    
+    
     public String next() {
      
         // Value retrieved from array-list
         String item = null;
         // Index to be read from array-list
         int index = 0;
+
 
         // Check the size, there is a possibility to have zero elements in your stored file
         if (Global.Db.size() > 0) {
@@ -50,6 +69,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         // Return the item
         return item;
     }
+    
    
     public MainStageJFrame() 
     {
@@ -334,7 +354,6 @@ public class MainStageJFrame extends javax.swing.JFrame {
 
         lbl_timergraphic.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         lbl_timergraphic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/TimeTaken.png"))); // NOI18N
-        lbl_timergraphic.setText("0:00");
         lbl_timergraphic.setIconTextGap(-115);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -536,7 +555,8 @@ public class MainStageJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-       word = next();
+        timer.scheduleAtFixedRate(task, 1000, 1000);
+        word = next();
     }//GEN-LAST:event_formWindowOpened
 
     private void btn_qActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_qActionPerformed
@@ -786,6 +806,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
                     image9.setVisible(true);
                     lbl_guessesleftgraphic.setText("0");
                     JOptionPane.showMessageDialog(null,"Failed");
+                    JOptionPane.showMessageDialog(null, word);
                     new StartJFrame().setVisible(true);
                     this.dispose();
                     break;
@@ -834,7 +855,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             public void run() {
                 new MainStageJFrame().setVisible(true);
             }
-        });
+        }); 
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
