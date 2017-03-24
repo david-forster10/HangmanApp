@@ -906,6 +906,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
                 image9.setVisible(true);
                 lbl_guessesleftgraphic.setText("0");
                 JOptionPane.showMessageDialog(null,"Failed");
+                JOptionPane.showMessageDialog(null, "The word was: " + word);
                 new StartJFrame().setVisible(true);
                 this.dispose();
                 break;
