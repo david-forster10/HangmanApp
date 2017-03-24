@@ -1,6 +1,5 @@
 package hangmanapp;
 
-import java.applet.AudioClip;
 import java.util.Random;
 import javax.swing.JOptionPane;
 import java.applet.*;
@@ -8,6 +7,10 @@ import java.io.File;
 import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
+import sun.audio.*;    //import the sun.audio package
+import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 //** add this into your application code as appropriate
 
@@ -16,8 +19,6 @@ public class MainStageJFrame extends javax.swing.JFrame {
     char SelectedLetter;
     String word; 
     String masked_word = "";
-    File wavCorrect = new File("C:\\Users\\Vanilla\\Documents\\GitHub\\HangmanApp\\Code\\HangmanApp\\src\\hangmanapp\\sounds\\correct.mp3");
-    AudioClip sndCorrect;
     int WrongGuesses = 0;
     int correct = 0;
     int secondsPassed = 0;
@@ -84,14 +85,6 @@ public class MainStageJFrame extends javax.swing.JFrame {
         image7.setVisible(false);
         image8.setVisible(false);
         image9.setVisible(false);
-        try 
-        {
-            sndCorrect = Applet.newAudioClip(wavCorrect.toURL());
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
     }
 
     @SuppressWarnings("unchecked")
@@ -126,7 +119,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
         btn_b = new javax.swing.JButton();
         btn_m = new javax.swing.JButton();
         btn_n = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        txtGuessWord = new javax.swing.JTextField();
         lbl_guessesleftgraphic = new javax.swing.JLabel();
         btnGuess = new javax.swing.JButton();
         lbl_timergraphic = new javax.swing.JLabel();
@@ -340,7 +333,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             }
         });
 
-        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txtGuessWord.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
         lbl_guessesleftgraphic.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         lbl_guessesleftgraphic.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -351,6 +344,11 @@ public class MainStageJFrame extends javax.swing.JFrame {
 
         btnGuess.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnGuess.setText("Guess the Word");
+        btnGuess.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnGuessMouseClicked(evt);
+            }
+        });
 
         lbl_timergraphic.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         lbl_timergraphic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hangmanapp/images/TimeTaken.png"))); // NOI18N
@@ -478,7 +476,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
                                                             .addComponent(btn_m)))))
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGap(116, 116, 116)
-                                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(txtGuessWord, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addGap(0, 0, Short.MAX_VALUE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -532,7 +530,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
                             .addComponent(btn_b)
                             .addComponent(btn_m))
                         .addGap(18, 18, 18)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtGuessWord, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnGuess, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -740,9 +738,23 @@ public class MainStageJFrame extends javax.swing.JFrame {
         btn_m.setEnabled(false);
     }//GEN-LAST:event_btn_mActionPerformed
 
+    private void btnGuessMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuessMouseClicked
+        if (txtGuessWord.getText().equals(word))
+        {
+            JOptionPane.showMessageDialog(null,"You Win!!");
+            new StartJFrame().setVisible(true);
+            this.dispose();
+        }
+        else if (!txtGuessWord.getText().equals(word))
+        {
+            WrongGuess();
+            txtGuessWord.setText("");
+        }
+    }//GEN-LAST:event_btnGuessMouseClicked
+
     
     public void Compare()
-    { 
+    {      
         StringBuilder Unmasking = new StringBuilder((String)lblWord.getText());
         boolean matched = false;
         for (int i = 0; i < word.length(); i++) 
@@ -753,79 +765,102 @@ public class MainStageJFrame extends javax.swing.JFrame {
                 lblWord.setText(Unmasking.toString());
                 matched = true;
                 correct = correct + 1;
-                sndCorrect.play();   //play once
+                try 
+                {
+                    InputStream in = new FileInputStream(new File("C:\\Users\\Vanilla\\Documents\\GitHub\\HangmanApp\\Code\\HangmanApp\\src\\hangmanapp\\sounds\\correct.wav"));
+                    AudioStream as;
+                    as = new AudioStream(in);
+                    AudioPlayer.player.start(as);
+                } 
+                catch (IOException ex) 
+                {
+                    Logger.getLogger(MainStageJFrame.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         }
         if (matched == false)
         {
-            JOptionPane.showMessageDialog(null,"wrong", "ERROR!", JOptionPane.INFORMATION_MESSAGE);
-            WrongGuesses = WrongGuesses + 1;
-            switch (WrongGuesses) {
-                case 1:
-                    image10.setVisible(false);
-                    image1.setVisible(true);
-                    lbl_guessesleftgraphic.setText("8");
-                    break;
-                case 2:
-                    image1.setVisible(false);
-                    image2.setVisible(true);
-                    lbl_guessesleftgraphic.setText("7");
-                    break;
-                case 3:
-                    image2.setVisible(false);
-                    image3.setVisible(true);
-                    lbl_guessesleftgraphic.setText("6");
-                    break;
-                case 4:
-                   image3.setVisible(false);
-                    image4.setVisible(true);
-                    lbl_guessesleftgraphic.setText("5");
-                    break;
-                case 5:
-                    image4.setVisible(false);
-                    image5.setVisible(true);
-                    lbl_guessesleftgraphic.setText("4");
-                    break;
-                case 6:
-                    image5.setVisible(false);
-                    image6.setVisible(true);
-                    lbl_guessesleftgraphic.setText("3");
-                    break;
-                case 7:
-                    image6.setVisible(false);
-                    image7.setVisible(true);
-                    lbl_guessesleftgraphic.setText("2");
-                    break;
-                case 8:
-                    image7.setVisible(false);
-                    image8.setVisible(true);
-                    lbl_guessesleftgraphic.setText("1");
-                    break;
-                case 9:
-                    image8.setVisible(false);
-                    image9.setVisible(true);
-                    lbl_guessesleftgraphic.setText("0");
-                    JOptionPane.showMessageDialog(null,"Failed");
-                    JOptionPane.showMessageDialog(null, word);
-                    new StartJFrame().setVisible(true);
-                    this.dispose();
-                    break;
-                default:
-                    break;
-            }
+            WrongGuess();
         }     
-        if (correct == word.length()) {
-                    JOptionPane.showMessageDialog(null,"Success");
-                    new StartJFrame().setVisible(true);
-                    this.dispose();
-                    }
+        if (correct == word.length()) 
+        {
+            JOptionPane.showMessageDialog(null,"Success");
+            new StartJFrame().setVisible(true);
+            this.dispose();
+        }
     }
     
+    public void WrongGuess()
+    {
+        WrongGuesses = WrongGuesses + 1;
+            
+        try 
+        {
+            InputStream in = new FileInputStream(new File("C:\\Users\\Vanilla\\Documents\\GitHub\\HangmanApp\\Code\\HangmanApp\\src\\hangmanapp\\sounds\\wrong.wav"));
+            AudioStream as;
+            as = new AudioStream(in);
+            AudioPlayer.player.start(as);
+        } 
+        catch (IOException ex) 
+        {
+            Logger.getLogger(MainStageJFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+                            
+        switch (WrongGuesses) 
+        {
+            case 1:
+                image10.setVisible(false);
+                image1.setVisible(true);
+                lbl_guessesleftgraphic.setText("8");
+                break;
+            case 2:
+                image1.setVisible(false);
+                image2.setVisible(true);
+                lbl_guessesleftgraphic.setText("7");
+                break;
+            case 3:
+                image2.setVisible(false);
+                image3.setVisible(true);
+                lbl_guessesleftgraphic.setText("6");
+                break;
+            case 4:
+                image3.setVisible(false);
+                image4.setVisible(true);
+                lbl_guessesleftgraphic.setText("5");
+                break;
+            case 5:
+                image4.setVisible(false);
+                image5.setVisible(true);
+                lbl_guessesleftgraphic.setText("4");
+                break;
+            case 6:
+                image5.setVisible(false);
+                image6.setVisible(true);
+                lbl_guessesleftgraphic.setText("3");
+                break;
+            case 7:
+                image6.setVisible(false);
+                image7.setVisible(true);
+                lbl_guessesleftgraphic.setText("2");
+                break;
+            case 8:
+                image7.setVisible(false);
+                image8.setVisible(true);
+                lbl_guessesleftgraphic.setText("1");
+                break;
+            case 9:
+                image8.setVisible(false);
+                image9.setVisible(true);
+                lbl_guessesleftgraphic.setText("0");
+                JOptionPane.showMessageDialog(null,"Failed");
+                new StartJFrame().setVisible(true);
+                this.dispose();
+                break;
+            default:
+                break;
+        }
+    }
     
-    
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -898,9 +933,9 @@ public class MainStageJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel image9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblWord;
     private javax.swing.JLabel lbl_guessesleftgraphic;
     private javax.swing.JLabel lbl_timergraphic;
+    private javax.swing.JTextField txtGuessWord;
     // End of variables declaration//GEN-END:variables
 }
