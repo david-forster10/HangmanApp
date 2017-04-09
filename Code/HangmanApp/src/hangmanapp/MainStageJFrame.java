@@ -821,7 +821,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
                 correct = correct + 1;
                 try 
                 {
-                    InputStream in = new FileInputStream(new File("C:\\Users\\Vanilla\\Documents\\GitHub\\HangmanApp\\Code\\HangmanApp\\src\\hangmanapp\\sounds\\correct.wav"));
+                    InputStream in = new FileInputStream(new File("C:\\Users\\Admin\\Documents\\GitHub\\HangmanApp\\Code\\HangmanApp\\src\\hangmanapp\\sounds\\correct.wav"));
                     AudioStream as;
                     as = new AudioStream(in);
                     AudioPlayer.player.start(as);
@@ -850,7 +850,7 @@ public class MainStageJFrame extends javax.swing.JFrame {
             
         try 
         {
-            InputStream in = new FileInputStream(new File("C:\\Users\\Vanilla\\Documents\\GitHub\\HangmanApp\\Code\\HangmanApp\\src\\hangmanapp\\sounds\\wrong.wav"));
+            InputStream in = new FileInputStream(new File("C:\\Users\\Admin\\Documents\\GitHub\\HangmanApp\\Code\\HangmanApp\\src\\hangmanapp\\sounds\\wrong.wav"));
             AudioStream as;
             as = new AudioStream(in);
             AudioPlayer.player.start(as);
